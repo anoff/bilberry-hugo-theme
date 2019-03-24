@@ -40,6 +40,7 @@
         <meta property="og:image" content="{{ .Scratch.Get "image" | absURL }}">
         <meta property="og:url" content="{{ .URL | absURL }}">
         <meta property="og:site_name" content="{{ .Site.Title }}">
+        <meta name="twitter:image" content="{{ .Scratch.Get "image" | absURL }}">
         {{- if .IsPage }}
         <meta property="og:type" content="article">
         {{- else -}}
